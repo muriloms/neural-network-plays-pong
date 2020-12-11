@@ -35,4 +35,23 @@ public class ANN
             layers.Add(new Layer(numOutputs, numInputs));
         }
     }
+
+    public List<double> CalcOutput(List<double> inputValues, List<double> desiredOutput)
+    {
+        return new List<double>();
+    }
+
+    public void UpdateWeights(List<double> outputs, List<double> desiredOutput)
+    {
+        
+    }
+
+    public List<double> Train(List<double> inputValues, List<double> desiredOutput)
+    {
+        List<double> outputValues = new List<double>();
+        outputValues = CalcOutput(inputValues, desiredOutput);
+        UpdateWeights(outputValues, desiredOutput);
+
+        return outputValues;
+    }
 }
