@@ -2,24 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Neuron
+namespace Game
 {
-    public int numInputs;
-    public double bias;
-    public double outputs;
-    public double errorGradient;
-    public List<double> weights = new List<double>();
-    public List<double> inputs = new List<double>();
-
-    public Neuron(int nInputs)
+    public class Neuron
     {
-        float weightRange = (float) 2.4 / (float) nInputs;
-        bias = UnityEngine.Random.Range(-weightRange, weightRange);
-        numInputs = nInputs;
+        public int numInputs;
+        public double bias;
+        public double outputs;
+        public double errorGradient;
+        public List<double> weights = new List<double>();
+        public List<double> inputs = new List<double>();
 
-        for (int i = 0; i < nInputs; i++)
+        public Neuron(int nInputs)
         {
-            weights.Add(UnityEngine.Random.Range(-weightRange, weightRange));
+            float weightRange = (float) 2.4 / (float) nInputs;
+            bias = UnityEngine.Random.Range(-weightRange, weightRange);
+            numInputs = nInputs;
+
+            for (int i = 0; i < nInputs; i++)
+            {
+                weights.Add(UnityEngine.Random.Range(-weightRange, weightRange));
+            }
         }
     }
 }
+

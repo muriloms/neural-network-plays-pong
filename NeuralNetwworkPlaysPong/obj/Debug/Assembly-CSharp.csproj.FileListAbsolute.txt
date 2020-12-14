@@ -1,0 +1,2 @@
+D:\Documentos\Cursos\Udemy\ABeginnerGuideToMLUnity\Section5\neural-network-plays-pong\NeuralNetwworkPlaysPong\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\Documentos\Cursos\Udemy\ABeginnerGuideToMLUnity\Section5\neural-network-plays-pong\NeuralNetwworkPlaysPong\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
